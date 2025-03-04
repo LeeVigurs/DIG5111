@@ -1,0 +1,9 @@
+angle=0:0.01:2*pi;
+x1=1*cos(angle);
+y1=1*sin(angle);
+x2=2*cos(angle);
+y2=2*sin(angle);
+x3=3*cos(angle);
+y3=3*sin(angle);
+plot(x1,y1,'-',x2,y2,'-',x3,y3,'-');
+axis('equal');

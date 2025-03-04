@@ -1,0 +1,17 @@
+fs=44100;
+ts=1/fs;
+dur=1;
+NumberOfSteps=10;
+t=0:ts:dur;
+subplot(211),plot(x);grid on;hold on;
+y=t*NumberOfSteps;
+Y=round(y);
+y=y*(1/NumberOfSteps);
+plot(y,'--');
+z=sin(2*pi*1.*t);
+subplot(212),plot(z);grid on;hold on;
+NumberOfSteps2=3;
+y2=z*NumberOfSteps2;
+y2=round(y2);
+y2=y2*(1/NumberOfSteps2);
+plot(y2,'--');
