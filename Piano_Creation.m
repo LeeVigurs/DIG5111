@@ -1,0 +1,13 @@
+Amplitude=0.5;
+Frequency=440;
+W=Frequency*2*pi;
+Fs=11025;
+Ts=1/Fs;
+Time=0:Ts:2;
+signal=Amplitude*cos(W*Time);
+figure(1);
+plot(Time(1:26),signal(1:26));
+xlabel('Time(Sec)');
+ylabel('Amplitude(V)');
+grid on;
+audiowrite('A4.wav',signal,Fs);
